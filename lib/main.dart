@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ruban_app/widgets/workers_grid.dart';
 
 import './screens/customer_screen.dart';
+import './widgets/workers_tile.dart';
 
 void main() {
   runApp(const MyApp());
