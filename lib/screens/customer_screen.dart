@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../widgets/workers_grid.dart';
+
 class CustomerScreen extends StatelessWidget {
   const CustomerScreen({Key? key}) : super(key: key);
 
@@ -11,8 +13,17 @@ class CustomerScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Customer'),
       ),
-      body: Center(
-        child: Text('Customer Screen'),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Text('Sample Text'),
+            Container(
+              height: 600,
+              width: double.infinity,
+              child: WorkersGrid(),
+            ),
+          ],
+        ),
       ),
     );
   }

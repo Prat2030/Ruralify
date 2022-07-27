@@ -10,9 +10,10 @@ class WorkersTile extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        padding: const EdgeInsets.all(8),
+        padding: const EdgeInsets.all(4),
+        margin: const EdgeInsets.only(top: 8, bottom: 8),
         child: Container(
-          margin: const EdgeInsets.all(8),
+          margin: const EdgeInsets.all(2),
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
