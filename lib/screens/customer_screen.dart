@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-
+import '../widgets/customer_app_drawer.dart';
 import '../widgets/workers_grid.dart';
 
 class CustomerScreen extends StatelessWidget {
@@ -16,15 +16,24 @@ class CustomerScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Text('Sample Text'),
+            Container(
+              color: Colors.grey.shade200,
+              height: 200,
+            ),
+            SizedBox(height: 10),
             Container(
               height: 600,
               width: double.infinity,
               child: WorkersGrid(),
             ),
+            Container(
+              color: Colors.grey.shade200,
+              height: 200,
+            ),
           ],
         ),
       ),
+      drawer: CustomerAppDrawer(),
     );
   }
 }

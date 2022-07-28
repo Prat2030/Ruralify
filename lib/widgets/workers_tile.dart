@@ -27,18 +27,22 @@ class WorkersTile extends StatelessWidget {
           footer: GridTileBar(
             backgroundColor: Colors.black45,
             title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Text(
-                  'Worker Name',
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
+                Expanded(
+                  child: Text(
+                    'Worker Name',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
-                IconButton(
-                  icon: Icon(Icons.call),
-                  onPressed: () {},
+                Expanded(
+                  child: IconButton(
+                    icon: Icon(Icons.call),
+                    onPressed: () {},
+                  ),
                 ),
               ],
             ),
