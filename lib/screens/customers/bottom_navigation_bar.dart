@@ -18,6 +18,8 @@ class _CustomerBottomNavigationBarState
     CustomerScreen(),
     CustomerScreen(),
     CustomerScreen(),
+    CustomerScreen(),
+    CustomerScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -33,6 +35,7 @@ class _CustomerBottomNavigationBarState
         child: _pages.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.yellow.shade600,
         selectedFontSize: 15,
         selectedIconTheme: IconThemeData(color: Colors.blue.shade600, size: 20),
@@ -50,6 +53,14 @@ class _CustomerBottomNavigationBarState
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
             label: 'School',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'College',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'College',
           ),
         ],
         currentIndex: _selectedIndex,
