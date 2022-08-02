@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import '../widgets/customer_app_drawer.dart';
-import '../widgets/workers_grid.dart';
+import '../../widgets/customer_app_drawer.dart';
+import '../../widgets/workers_grid.dart';
 
 class CustomerScreen extends StatelessWidget {
   const CustomerScreen({Key? key}) : super(key: key);

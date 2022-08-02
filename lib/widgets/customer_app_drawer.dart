@@ -10,21 +10,6 @@ class CustomerAppDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          // Container(
-          //   height: 50,
-          //   margin: EdgeInsets.only(
-          //     left: 10,
-          //     top: 20,
-          //   ),
-          //   child: Text(
-          //     'Customer Name',
-          //     style: TextStyle(
-          //       fontSize: 20,
-          //       fontWeight: FontWeight.bold,
-          //     ),
-          //     textAlign: TextAlign.left,
-          //   ),
-          // ),
           AppBar(
             leading: CircleAvatar(
               maxRadius: 10,

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ruban_app/widgets/workers_grid.dart';
 
-import './screens/customer_screen.dart';
-import './widgets/workers_tile.dart';
+import 'screens/customers/customer_screen.dart';
+import 'screens/customers/bottom_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CustomerScreen(),
+      // home: CustomerScreen(),
+      home: CustomerBottomNavigationBar(),
     );
   }
 }
