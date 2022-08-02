@@ -29,7 +29,6 @@ class _CustomerBottomNavigationBarState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Center(
         child: _pages.elementAt(_selectedIndex),
       ),
