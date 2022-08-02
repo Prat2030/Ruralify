@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import './user_bookings.dart';
 
 import 'customer_screen.dart';
 
@@ -18,7 +19,7 @@ class _CustomerBottomNavigationBarState
     CustomerScreen(),
     CustomerScreen(),
     CustomerScreen(),
-    CustomerScreen(),
+    UserBookings(),
     CustomerScreen(),
   ];
 
@@ -38,7 +39,7 @@ class _CustomerBottomNavigationBarState
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.yellow.shade600,
         selectedFontSize: 15,
-        selectedIconTheme: IconThemeData(color: Colors.blue.shade600, size: 20),
+        selectedIconTheme: IconThemeData(color: Colors.blue.shade600, size: 25),
         selectedItemColor: Colors.blue.shade600,
         selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
         items: const <BottomNavigationBarItem>[
@@ -51,16 +52,16 @@ class _CustomerBottomNavigationBarState
             label: 'Business',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.add_circle_outline),
+            label: 'Book',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'College',
+            icon: Icon(Icons.alarm),
+            label: 'Bookings',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'College',
+            icon: Icon(Icons.person),
+            label: 'Profile',
           ),
         ],
         currentIndex: _selectedIndex,
