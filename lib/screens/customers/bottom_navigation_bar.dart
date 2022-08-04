@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:ruban_app/screens/customers/user_profile.dart';
 import './user_bookings.dart';
 
 import 'customer_screen.dart';
@@ -19,8 +20,8 @@ class _CustomerBottomNavigationBarState
     CustomerScreen(),
     CustomerScreen(),
     CustomerScreen(),
-    UserBookings(),
-    CustomerScreen(),
+    UserBookingsScreen(),
+    UserProfile(),
   ];
 
   void _onItemTapped(int index) {
