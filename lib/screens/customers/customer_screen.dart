@@ -16,9 +16,9 @@ class CustomerScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Container(
-              color: Colors.grey.shade200,
-              height: 200,
+            Placeholder(
+              fallbackHeight: 200,
+              color: Colors.red,
             ),
             SizedBox(height: 10),
             Container(
