@@ -1,4 +1,4 @@
-package com.example.ruban_app
+package com.example.ruralify
 
 import io.flutter.embedding.android.FlutterActivity
 

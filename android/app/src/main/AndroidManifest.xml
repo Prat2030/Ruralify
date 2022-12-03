@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ruban_app">
+    package="com.example.ruralify">
    <application
-        android:label="ruban_app"
+        android:label="ruralify"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

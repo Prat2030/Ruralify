@@ -1,6 +1,6 @@
 {
-    "name": "ruban_app",
-    "short_name": "ruban_app",
+    "name": "ruralify",
+    "short_name": "ruralify",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

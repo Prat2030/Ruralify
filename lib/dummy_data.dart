@@ -1,4 +1,4 @@
-import 'package:ruban_app/models/worker.dart';
+import 'package:ruralify/models/worker.dart';
 import './models/worker.dart';
 
 var DummyData = [

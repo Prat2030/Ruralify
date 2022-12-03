@@ -1,5 +1,5 @@
 
-# Ruban App
+# Ruralify
 
 This is my personal flutter project which stands a chance to generate employement of skilled labors.
 It aims to connect all the skilled workers(like plumbers,electricians,carpenter,etc.) of rural and urban areas and bring them under a common platform and make their skills earn money for them.
