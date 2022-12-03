@@ -21,6 +21,7 @@ class CustomerScreen extends StatelessWidget {
               color: Colors.red,
             ),
             SizedBox(height: 10),
+            
             Container(
               height: 600,
               width: double.infinity,

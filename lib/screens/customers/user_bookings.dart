@@ -2,6 +2,7 @@
 
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
+import '../../widgets/bookings_item.dart';
 
 class UserBookingsScreen extends StatelessWidget {
   const UserBookingsScreen({Key? key}) : super(key: key);
@@ -12,33 +13,35 @@ class UserBookingsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Your Bookings'),
       ),
-      body: Container(
-        padding: const EdgeInsets.all(8),
-        margin: const EdgeInsets.only(left: 8),
-        child: Column(
-          children: <Widget>[
-            DropdownButtonHideUnderline(
-              child: DropdownButton2(
-                hint: Text(
-                  'Select Category',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
+      body: SingleChildScrollView(
+        child: Container(
+          padding: const EdgeInsets.all(8),
+          margin: const EdgeInsets.only(left: 8),
+          child: Column(
+            children: <Widget>[
+              DropdownButtonHideUnderline(
+                child: DropdownButton2(
+                  hint: Text(
+                    'Select Category',
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  overflow: TextOverflow.ellipsis,
+                  items: [
+                    DropdownMenuItem(
+                      child: Text('Item 1'),
+                      value: 'Item 1',
+                    ),
+                  ],
+                  onChanged: (value) {},
                 ),
-                items: [
-                  DropdownMenuItem(
-                    child: Text('Item 1'),
-                    value: 'Item 1',
-                  ),
-                ],
-                onChanged: (value) {},
               ),
-            ),
-            const SizedBox(height: 8),
-            SingleChildScrollView(),
-          ],
+              const SizedBox(height: 8),
+              BookingsItem(),
+            ],
+          ),
         ),
       ),
     );
