@@ -1,10 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:ruban_app/screens/customers/user_profile.dart';
+import './book_appointment.dart';
+import './user_profile.dart';
 import './user_bookings.dart';
+import './book_appointment.dart';
 
-import 'customer_screen.dart';
+import 'customer_home_screen.dart';
 
 class CustomerBottomNavigationBar extends StatefulWidget {
   @override
@@ -15,6 +17,13 @@ class CustomerBottomNavigationBar extends StatefulWidget {
 class _CustomerBottomNavigationBarState
     extends State<CustomerBottomNavigationBar> {
   int _selectedIndex = 0;
+  static const List<Widget> _widgetOptions = <Widget>[
+    CustomerHomeScreen(),
+    CustomerHomeScreen(),
+    CustomerHomeScreen(),
+    UserBookingsScreen(),
+    UserProfileScreen(),
+  ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -26,7 +35,7 @@ class _CustomerBottomNavigationBarState
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: CustomerScreen(),
+        child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,

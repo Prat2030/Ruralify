@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'screens/customers/customer_screen.dart';
-import 'screens/customers/bottom_navigation_bar.dart';
+import 'screens/customers/customer_home_screen.dart';
+import 'screens/customers/customer_bottom_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: CustomerScreen(),
       home: CustomerBottomNavigationBar(),
     );
   }

@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:ruban_app/widgets/dropdown_button.dart';
+import '../../widgets/dropdown_button.dart';
 import '../../widgets/customer_app_drawer.dart';
 import '../../widgets/workers_grid.dart';
 
-class CustomerScreen extends StatelessWidget {
-  const CustomerScreen({Key? key}) : super(key: key);
+class CustomerHomeScreen extends StatelessWidget {
+  const CustomerHomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
