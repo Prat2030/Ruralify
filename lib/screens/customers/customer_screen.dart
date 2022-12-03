@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:ruban_app/widgets/dropdown_button.dart';
 import '../../widgets/customer_app_drawer.dart';
 import '../../widgets/workers_grid.dart';
 
@@ -15,13 +16,14 @@ class CustomerScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Placeholder(
               fallbackHeight: 200,
               color: Colors.red,
             ),
             SizedBox(height: 10),
-            
+            DropDownButton(),
             Container(
               height: 600,
               width: double.infinity,

@@ -16,14 +16,6 @@ class _CustomerBottomNavigationBarState
     extends State<CustomerBottomNavigationBar> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _pages = <Widget>[
-    CustomerScreen(),
-    CustomerScreen(),
-    CustomerScreen(),
-    UserBookingsScreen(),
-    UserProfile(),
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -34,7 +26,7 @@ class _CustomerBottomNavigationBarState
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: _pages.elementAt(_selectedIndex),
+        child: CustomerScreen(),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
